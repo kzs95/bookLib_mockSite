@@ -1,0 +1,71 @@
+:is(.snap-container-X, .snap-container-Y) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:1rem;
+    width: 100%;
+    aspect-ratio: 1.5;
+    overflow: auto;
+    scroll-behavior: smooth;
+    box-shadow: 0 0 5px 2px #d8bfd8;
+}
+
+.snap-container-X {
+    scroll-snap-type: x mandatory;
+    flex-flow: row nowrap;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+}
+
+.snap-container-Y {
+    scroll-snap-type: y mandatory;
+    flex-flow: column nowrap;
+}
+
+:is(.snap-container-X, .snap-container-Y) div,
+::slotted([slot='snap-pages']) {
+    flex: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overscroll-behavior-block: contain;
+    position: relative;
+    user-select: none;
+    /* background-color: #d8bfd840; */
+}
+
+.changeSnapPage {
+    padding-block: 1rem 0;
+    padding-inline: 0 1rem;
+    text-align: right;
+}
+
+.changeSnapPage>button {
+    width: 35px;
+    aspect-ratio: 1;
+    margin-inline-start: .5rem;
+    cursor: pointer;
+    border: 2px solid #2E5090;
+    background-color: #B9D9EB;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.changeSnapPage.Y>button {
+    transform: rotate(90deg);
+}
+
+button.goBackward {
+    background-image: url(../imgs/icons/chevron_left_40.svg);
+}
+
+button.goForward {
+    background-image: url(../imgs/icons/chevron_right_40.svg);
+}
+
+:disabled{
+    filter: grayscale(1);
+    pointer-events: none;
+}

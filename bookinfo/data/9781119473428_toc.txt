@@ -1,0 +1,324 @@
+List of Figures xiii
+List of Tables xiv
+Acknowledgments xv
+About the Companion Website xvii
+1 Introduction 1
+Key Topics 1
+The Nature of Language 2
+Knowledge of Language 3
+Competence and performance 4
+Variation 6
+Variants and the linguistic variable 7
+Language Users and Their Groups: Identities 8
+Language and Culture 10
+Directions of influence 11
+The Whorfian hypothesis 11
+Correlations 13
+The Interdisciplinary Legacy of Sociolinguistics 14
+Overview of the Book 16
+Chapter Summary 16
+Exercises 17
+Further Reading 18
+References 19
+Part I Languages, Communities, and Contexts 23
+2 Languages, Dialects, and Varieties 25
+Key Topics 25
+What is a Language? 25
+Language or Dialect? 26
+Mutual intelligibility 27
+The role of social identity 29
+Standardization 30
+The standard as an abstraction 30
+The standardization process 31
+The standard and language change 32
+Standard language? 33
+The standard-dialect hierarchy 33
+Regional Dialects 34
+Dialect geography 34
+Everyone has an accent 35
+Social Dialects 36
+Kiezdeutsch "neighborhood German" 37
+Ethnic dialects 39
+African American Vernacular English 40
+Features of AAVE 41
+Development of AAVE 42
+Societal aspects of AAVE Use 43
+Styles and Indexes: The Social Meanings of Linguistic Forms 43
+Chapter Summary 47
+Exercises 47
+Further Reading 48
+References 49
+3 Defining Groups 55
+Key Topics 55
+Speech Communities 56
+Linguistic boundaries 56
+Shared norms 57
+Communities of Practice 60
+Social Networks 62
+Social Identities 64
+Beliefs about Language and Social Groups 65
+Language ideologies 66
+The standard language ideology 66
+The purist ideology 67
+Monoglossic ideologies 67
+Iconicity, erasure, and recursivity 68
+Language attitudes 69
+Perceptual dialectology 69
+Matched/verbal guises 70
+Implicit association task (IAT) 71
+Chapter Summary 72
+Exercises 72
+Further Reading 73
+References 74
+4 Language in Context: Pragmatics 79
+Key Topics 79
+Speech Acts 79
+Performatives 80
+Implicature 83
+Maxims 83
+Politeness 85
+Face 85
+Positive and negative politeness 86
+Beyond politeness theory 87
+Politeness and indirectness 88
+Pronouns 89
+Tu and vous: power and solidarity 89
+Pronouns and positioning 92
+Naming and Titles 92
+Fluidity and change in address terms 94
+Chapter Summary 97
+Exercises 97
+Further Reading 100
+References 100
+Part II Theory and Methods 105
+5 Language Variation and Change 107
+Key Topics 107
+Variables and Correlations 107
+Types of linguistic variables 108
+Indicators, markers and stereotypes 109
+Independent variables 109
+Data Collection and Analysis 110
+The observer"s paradox 110
+The sociolinguistic interview 110
+Sampling 111
+Apparent time and real time 112
+Doing Quantitative Research: What Do the Numbers Really Mean? 112
+Regional Variation 113
+Mapping dialects 114
+Methods in dialectology 115
+Dialect mixture and free variation 117
+Linguistic atlases 117
+Social Variation 118
+Social class membership 118
+The First Wave of Variation Studies 120
+Early work on gender variation 121
+The fourth floor 121
+Variation in Norwich 124
+Variation in Detroit 124
+Variation in Glasgow 125
+Linguistic constraints on variation 126
+Language Variation and Change 127
+Change from above and below 127
+Some changes in progress 127
+Change across space: urban centers and physical barriers 129
+Change over time or age-grading? 129
+Martha"s Vineyard 131
+Gender and language change 132
+Language change and the linguistic marketplace 136
+The Second Wave of Variation Studies 137
+Social networks 138
+Social network theory and language change 139
+Gender variation in the second wave 140
+Jocks and burnouts 141
+The Third Wave of Variation Studies 142
+Stance, style, and identity 142
+Change across the lifespan 144
+Chapter Summary 144
+Exercises 144
+Further Reading 146
+References 146
+6 Ethnographic Approaches in Sociolinguistics 153
+Key Topics 153
+Ethnography: Participant Observation 153
+The Ethnography of Communication 155
+Communicative competence 156
+The communicative event and communicative acts 157
+The SPEAKING device 157
+Ethnography and beyond 160
+Ethnomethodology 161
+Background knowledge as part of communication 161
+Commonsense knowledge and practical reasoning 162
+Garfinkel and his students: studies in ethnomethodology 163
+Ethnomethodology and conversation analysis 164
+Critical Ethnography 164
+(Socio)linguistic Ethnography 165
+Digital Ethnographies: Research in Online Communities 167
+Ethnography in Combination with Other Sociolinguistic Methods 168
+Chapter Summary 169
+Exercises 169
+Further Reading 171
+References 172
+7 Discourse Analysis 175
+Key Topics 175
+Conversation Analysis 176
+Adjacency pairs 177
+Openings 178
+Closings 179
+Turn-taking 181
+Repair 182
+Institutional talk 183
+Membership categorization 185
+Interactional Sociolinguistics 185
+Data and methodologies 186
+Contextualization and stance 188
+Identities 189
+Critical Discourse Analysis 192
+Contrasts and critiques 193
+Methodologies and connections 193
+Corpus Linguistics 196
+Chapter Summary 198
+Exercises 198
+Further Reading 199
+References 200
+Part III Multilingual Matters 207
+8 Languages in Contact: Multilingual Societies and Multilingual Discourse 209
+Key Topics 209
+Multilingualism as a Societal Phenomenon 210
+Language competencies in multilingual societies 211
+Language ideologies surrounding multilingualism 211
+Linguistic landscapes 213
+Language attitudes in multilingual settings 216
+Language Maintenance and Shift 218
+Diglossia 219
+Domains 220
+Language attitudes and ideologies 220
+Language learning 220
+The statuses of the H and L varieties 221
+Extended diglossia and language maintenance 222
+Questioning diglossia 223
+Multilingual Discourse 224
+Metaphorical and situational codeswitching 225
+Communication accommodation theory 225
+The markedness model 226
+Multilingual identities 227
+Bricolage 230
+Chapter Summary 231
+Exercises 231
+Further Reading 235
+References 235
+9 Contact Varieties: Structural Consequences of Social Factors 243
+Key Topics 243
+The Structure of Codeswitching 243
+Loanwords and Calques 245
+Convergence 246
+Ethnicized and Social Dialects as Contact Varieties 247
+Latinx Englishes 248
+Straattaal "street language" 249
+Mixed Languages 250
+Lingua Francas 252
+Pidgin and Creole Languages: Definitions 253
+Connections between P/C languages and second language acquisition 254
+Creole Formation 255
+Theories of creole genesis 256
+Geographical Distribution 258
+Linguistic Characteristics of P/C Languages 259
+Phonology 260
+Morphosyntax 260
+Vocabulary 261
+From Pidgin to Creole and Beyond 262
+Creole continuum? 263
+Chapter Summary 265
+Exercises 265
+Further Reading 266
+References 266
+10 Language, the Nation, and Beyond 273
+Key Topics 273
+Language and Nation 273
+Nationalism and language 274
+Language and national identity categories 278
+Belonging beyond the nation 280
+Language and Migration 282
+Identity construction in the context of migration 282
+Identity over time and space 284
+Diversity and superdiversity 287
+Discourses of migration and integration 288
+LADO 291
+Language and Globalization 293
+Global English: threat or promise? 295
+Language and the Digital World 296
+Chapter Summary 298
+Exercises 298
+Further Reading 298
+References 299
+Part IV Sociolinguistics and Social Justice 305
+11 Language, Gender, and Sexuality 307
+Key Topics 307
+Defining Terms: Sex Category, Gender, and Sexuality 307
+Sexist Language 309
+Grammatical gender marking 310
+Language change 312
+Deficit, Dominance, and Difference 313
+Women"s language as a deficit 314
+Dominance 315
+Difference 316
+Gender and Sexuality Identities 317
+Multiple identities 318
+The role of hegemonic ideologies in gender and sexuality identity construction 319
+Context-specific identity construction: the workplace 321
+Discourses of Gender and Sexuality 323
+Normative discourses 323
+Discourses about language use 325
+Chapter Summary 326
+Exercises 326
+Further Reading 327
+References 327
+12 Sociolinguistics and Education 335
+Key Topics 335
+Social Dialects and Education 336
+Restricted codes and the language gap 336
+Difference not deficit 337
+Role of the home dialect in education 340
+An achievement gap? 342
+Education in Multilingual Contexts 343
+Ideologies 343
+Use of minoritized languages in the classroom 345
+Elite and immigrant bilingualism 348
+Education and World-Wide English 349
+Circles of English 350
+English in world-wide education 350
+Elite closure 351
+English in Europe 353
+Chapter Summary 354
+Exercises 355
+Further Reading 356
+References 356
+13 Language Policy and Planning 365
+Key Topics 365
+Terminology, Concepts, and Development of the Field 365
+Types of language planning 366
+The intellectual history of LPP 369
+Data and methods 370
+LPP and Nationalization 372
+LPP in Turkey: orthography and purity 372
+LPP in the Soviet Union and the post-Soviet era: from Russification to nationalization 373
+Official monolingualism in France 375
+LPP in Post- and Neo-Colonial Contexts 376
+Kenya 376
+India 377
+Multilingual Countries and LPP 378
+Canada 379
+Belgium 380
+Papua New Guinea 381
+Singapore 381
+Feminist Language Planning 382
+Endangered Languages and the Spread of English 384
+Endangered languages 384
+Family language policy, new speakers, and LPP 385
+English world-wide 387
+Language policy ... or lack thereof 389
+Chapter Summary 389
+Exercises 389
+Further Reading 390
+References 391
+Glossary 397
+Index 421

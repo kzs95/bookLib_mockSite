@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="book,preview">
+    <meta name="description" content="Provide information for various books.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="color-scheme" content="only light" />
+    <title>Home | Book Library</title>
+    <link rel="icon" type="image/svg" href="/imgs/favicon/book_icon.svg">
+    <link rel="stylesheet" href="/css/books.css">
+    <script src="/js/book_component.js" type="module" defer></script>
+    <script src="/js/image_component.js" type="module" defer></script>
+    <script src="/js/tile_component.js" type="module" defer></script>
+    <script src="/js/snapscrollbox_component.js" type="module" defer></script>
+    <script src="/js/index.js" type="module" defer></script>
+</head>
+
+<body>
+    <booklib-header></booklib-header>
+    <main class="contentWrapper">
+        <section id="home-featured">
+            <h1>Featured</h1>
+            <banner-carousel>
+                <div slot="banner-item1"><a><img src="./imgs/banner/banner1.svg"></a></div>
+                <div slot="banner-item2"><a><img src="./imgs/banner/banner2.svg"></a></div>
+                <div slot="banner-item3"><a><img src="./imgs/banner/banner3.svg"></a></div>
+                <div slot="banner-item4"><a><img src="./imgs/banner/banner4.svg"></a></div>
+                <div slot="banner-item5"><a><img src="./imgs/banner/banner5.svg"></a></div>
+            </banner-carousel>
+        </section>
+        <section id="home-newbooks">
+            <h1>New Books</h1>
+        </section>
+        <section id="home-about">
+            <h1>About Us</h1>
+            <tile-potrait reverse bgcolor="#00000000">
+                <picture slot="tile-potrait-img">
+                    <source media="(max-width:500px)" srcset="./imgs/about/location-old-exterior-potrait.webp"
+                        type="image/webp">
+                    <source media="(max-width:500px)" srcset="./imgs/about/location-old-exterior-potrait.jpg"
+                        type="image/jpg">
+                    <img class="antiqueLook" alt="Lorem ipsum dolor sit amet." width="800px"
+                        src="./imgs/about/location-old-exterior-landscape.jpg" type="image/jpg">
+                    <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+                </picture>
+                <div slot="tile-potrait-descp-text" class="unclamp">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                    dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.<br />
+                    <a class="page-preview-link" href="/about.html">More About Us</a>
+                </div>
+            </tile-potrait>
+        </section>
+        <section id="home-articles">
+            <h1>Articles</h1>
+        </section>
+    </main>
+    <booklib-footer></booklib-footer>
+</body>
+
+</html>

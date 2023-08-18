@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="300"
+   viewBox="0 0 158.74998 79.37499"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="banner2.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10968"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.50416667"
+     inkscape:cx="472.06612"
+     inkscape:cy="255.86777"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient11477">
+      <stop
+         style="stop-color:#f4b173;stop-opacity:1;"
+         offset="0"
+         id="stop11473" />
+      <stop
+         style="stop-color:#f4b173;stop-opacity:0;"
+         offset="1"
+         id="stop11475" />
+    </linearGradient>
+    <rect
+       x="-258.51646"
+       y="-225.96254"
+       width="1392.159"
+       height="886.61571"
+       id="rect3075" />
+    <rect
+       x="18.956907"
+       y="31.143489"
+       width="389.97065"
+       height="102.90892"
+       id="rect1715" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient11477"
+       id="linearGradient11479"
+       x1="19.487944"
+       y1="40.00862"
+       x2="85.271073"
+       y2="40.00862"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     id="layer1"
+     style="fill:#eaadb7;fill-opacity:1">
+    <rect
+       style="fill:#eaadb7;stroke-width:0.08999999;stroke-linecap:round;paint-order:stroke fill markers;fill-opacity:1;stroke-dasharray:none"
+       id="rect788"
+       width="158.74998"
+       height="79.374992"
+       x="-8.8817842e-16"
+       y="0" />
+    <text
+       xml:space="preserve"
+       transform="matrix(2.0096485,0,0,2.0487209,-33.999987,-60.525296)"
+       id="text1713"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.6929px;font-family:Georgia;-inkscape-font-specification:'Georgia, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1715);display:inline;fill:#f4b173;fill-opacity:1;stroke:#7f3803;stroke-width:0.340118;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"><tspan
+         x="18.957031"
+         y="46.203251"
+         id="tspan11495">Featured</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.2645833)"
+       id="text3073"
+       style="fill:#eaadb7;font-size:120px;-inkscape-font-specification:'Georgia, Normal';font-family:Georgia;stroke-width:2.445;paint-order:stroke fill markers;stroke-linecap:round;stroke-dasharray:none;fill-opacity:1;stroke:#1b17ba;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect3075)" />
+  </g>
+</svg>

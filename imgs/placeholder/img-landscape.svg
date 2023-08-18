@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 507.99994 285.74997"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="img-landscape.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.13055262"
+     inkscape:cx="1677.4846"
+     inkscape:cy="1309.8167"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-16.480095 : 213.32126 : 1"
+       inkscape:vp_y="0 : 1000.0001 : 0"
+       inkscape:vp_z="195.18656 : 213.32126 : 1"
+       inkscape:persp3d-origin="89.35323 : 193.47751 : 1"
+       id="perspective240" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#bec8d0;fill-opacity:1;stroke-width:0.0840055;stroke-linecap:round;paint-order:stroke fill markers"
+       id="rect536"
+       width="508"
+       height="285.75"
+       x="0"
+       y="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:79.375px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#84ac84;fill-opacity:1;stroke:none;stroke-width:0.132;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       x="24.48171"
+       y="92.242432"
+       id="text4517"><tspan
+         sodipodi:role="line"
+         id="tspan4515"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:79.375px;font-family:serif;-inkscape-font-specification:'serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#84ac84;fill-opacity:1;stroke:none;stroke-width:0.132;stroke-opacity:1"
+         x="24.48171"
+         y="92.242432">Image</tspan></text>
+  </g>
+</svg>

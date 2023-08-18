@@ -1,0 +1,61 @@
+:host {
+    display: block;
+    margin-block: .5rem;
+}
+
+.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: center;
+    gap: .25rem;
+}
+
+.pagination>span {
+    display: inline-block;
+    font-size: 1.05rem;
+}
+
+:is(.prevPage, .nextPage)> a{
+    height: 1em;
+    aspect-ratio: 1;
+    padding-inline: .5rem;
+}
+
+.prevPage>a {
+    background: url(../imgs/icons/chevron_left_40.svg) center/contain no-repeat;
+}
+
+.nextPage>a {
+    background: url(../imgs/icons/chevron_right_40.svg) center/contain no-repeat;
+}
+
+:is(.nextPage, .prevPage).endPt {
+    background-color: gray;
+}
+
+::slotted(.pagesAnchor) {
+    padding-inline: .5rem;
+    display: inline-block;
+    font-size: 1.05rem;
+}
+
+::slotted(.pagesAnchor.currentPage) {
+    font-weight: bold;
+    border: 1px solid #004792;
+    background-color: #B0C4DE;
+}
+::slotted(a){
+    color: #004792;
+    text-decoration: none;
+}
+
+@media(hover:hover){
+    :is(.prevPage, .nextPage):hover{
+        background-color: #D6CADD6b;
+    }
+    ::slotted(.pagesAnchor[href]:hover){
+        background-color: #D6CADD6b;
+    }
+}

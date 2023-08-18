@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="book,preview">
+    <meta name="description" content="Provide information for various books.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="color-scheme" content="only light" />
+    <title>All Books | Book Library</title>
+    <link rel="icon" type="image/png" href="/imgs/favicon/book_icon.svg">
+    <link rel="stylesheet" href="/css/books.css">
+    <script src="/js/book_component.js" type="module" defer></script>
+    <script src="/js/image_component.js" type="module" defer></script>
+    <script src="/js/pagination_component.js" type="module" defer></script>
+    <script src="js/collection.js" type="module" defer></script>
+</head>
+
+<body>
+    <booklib-header></booklib-header>
+    <main class="collectionWrapper">
+        <nav id="genreSelect">
+            <a class="genre" id="latest" href="/collection.html?genre=latest">
+                <div class="genreGraphics">
+                    <img alt="Latest Books" src="/imgs/icons/genre/latest.png" />
+                    <p class="genreName">Latest</p>
+                </div>
+            </a>
+            <a class="genre" id="fictionEng" href="/collection.html?genre=fictionEng">
+                <div class="genreGraphics">
+                    <img alt="English Fiction" src="/imgs/icons/genre/fictionEng.png" />
+                    <p class="genreName">English Fiction</p>
+                </div>
+            </a>
+            <a class="genre" id="management" href="/collection.html?genre=management">
+                <div class="genreGraphics">
+                    <img alt="Management" src="/imgs/icons/genre/management.png" />
+                    <p class="genreName">Management</p>
+                </div>
+            </a>
+            <a class="genre" id="history" href="/collection.html?genre=history">
+                <div class="genreGraphics">
+                    <img alt="History" src="/imgs/icons/genre/history.png" />
+                    <p class="genreName">History</p>
+                </div>
+            </a>
+            <a class="genre" id="linguistics" href="/collection.html?genre=linguistics">
+                <div class="genreGraphics">
+                    <img alt="Linguistics" src="/imgs/icons/genre/languages.png" />
+                    <p class="genreName">Linguistics</p>
+                </div>
+            </a>
+            <a class="genre" id="programming" href="/collection.html?genre=programming">
+                <div class="genreGraphics">
+                    <img alt="Programming" src="/imgs/icons/genre/programming.png" />
+                    <p class="genreName">Programming</p>
+                </div>
+            </a>
+            <a class="genre" id="children" href="/collection.html?genre=children">
+                <div class="genreGraphics">
+                    <img alt="Children's Book" src="/imgs/icons/genre/children.png" />
+                    <p class="genreName">Children's Books</p>
+                </div>
+            </a>
+            <a class="genre" id="chinese" href="/collection.html?genre=chinese">
+                <div class="genreGraphics">
+                    <img alt="Chinese" src="/imgs/icons/genre/chinese-word.svg" />
+                    <p class="genreName">Chinese</p>
+                </div>
+            </a>
+            <a class="genre" id="japanese" href="/collection.html?genre=japanese">
+                <div class="genreGraphics">
+                    <img alt="Japanese" src="/imgs/icons/genre/hiragana.svg" />
+                    <p class="genreName">Japanese</p>
+                </div>
+            </a>
+        </nav>
+        <section id="bookListings"></section>
+    </main>
+    <booklib-footer></booklib-footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64"
+   height="64"
+   viewBox="0 0 16.933331 16.933331"
+   version="1.1"
+   id="svg2364"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="hiragana.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2366"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="2.0888419"
+     inkscape:cx="4.0692405"
+     inkscape:cy="46.91595"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2361" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:14.5521px;font-family:'Yu Gothic','sans-serif';-inkscape-font-specification:'serif, Normal';fill:#ca111e;fill-opacity:1;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       x="1.297792"
+       y="13.802805"
+       id="text2495"><tspan
+         sodipodi:role="line"
+         id="tspan2493"
+         style="font-size:14.5521px;fill:#ca111e;fill-opacity:1;stroke-width:2"
+         x="1.297792"
+         y="13.802805">あ</tspan></text>
+  </g>
+</svg>

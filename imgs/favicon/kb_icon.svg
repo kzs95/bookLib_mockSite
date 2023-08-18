@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="20"
+   viewBox="0 -960 960 960"
+   width="20"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="kb_icon.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="14.654788"
+     inkscape:cx="15.660411"
+     inkscape:cy="13.442706"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <rect
+     style="fill:#72d7a4;fill-opacity:1;stroke:none;stroke-width:16.5204;stroke-linecap:round;stroke-opacity:1;paint-order:stroke fill markers"
+     id="rect899"
+     width="768"
+     height="480"
+     x="96"
+     y="-720" />
+  <path
+     d="m 109.5,-195.00002 q -35.268752,0 -60.384366,-25.11562 Q 24,-245.23127 24,-280.50002 V -679.5 q 0,-35.26875 25.115634,-60.38439 Q 74.231248,-765 109.5,-765 h 740.99997 q 35.26874,0 60.38438,25.11561 Q 936,-714.76875 936,-679.5 v 398.99998 q 0,35.26875 -25.11565,60.38438 -25.11564,25.11562 -60.38438,25.11562 z m 0,-85.5 H 850.49997 V -679.5 H 109.5 Z m 199.49999,-28.5 h 341.99998 v -85.5 H 308.99999 Z m -114,-142.49999 h 85.5 v -85.5 h -85.5 z m 121.125,0 h 85.49999 v -85.5 h -85.49999 z m 121.12499,0 h 85.5 v -85.5 h -85.5 z m 121.125,0 h 85.49999 v -85.5 h -85.49999 z m 121.12499,0 h 85.5 v -85.5 h -85.5 z m -484.49998,-114 h 85.5 V -651 h -85.5 z m 121.125,0 h 85.49999 V -651 h -85.49999 z m 121.12499,0 h 85.5 V -651 h -85.5 z m 121.125,0 h 85.49999 V -651 h -85.49999 z m 121.12499,0 h 85.5 V -651 h -85.5 z M 109.5,-280.50002 V -679.5 Z"
+     id="path2"
+     style="stroke-width:1.1875;fill:#148144;fill-opacity:1;stroke:none;stroke-opacity:1" />
+</svg>

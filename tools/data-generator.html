@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="/imgs/favicon/kb_icon.svg">
+    <title>Book Data Entry</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        table,
+        tr,
+        td {
+            padding: 0.5rem;
+            border-bottom: 1px solid gray;
+            border-collapse: collapse;
+        }
+
+        form {
+            margin: .5rem;
+            padding: .5rem;
+            border: 1px solid green;
+        }
+
+        textarea {
+            width: min(100%, 300px);
+            resize: vertical;
+        }
+
+        textarea#output {
+            margin: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Book Data JSON File</h1>
+    <form method="dialog">
+        <fieldset>
+            <legend>Load & Download File</legend>
+            <input id="existing-file" name="existing-file" type="file" accept=".json" />
+            <hr />
+            <button id="get-file">Get JSON File</button>
+            <span id="download-link"></span>
+        </fieldset>
+    </form>
+    <form name="book-data">
+        <fieldset>
+            <legend>Data Entry</legend>
+            <table>
+                <colgroup>
+                    <col class="item">
+                    <col class="data">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td><label for="genre">Genre</label></td>
+                        <td>
+                            <select name="genre" id="genre" required>
+                                <option value="fictionEng">English Fiction</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="japanese">Japanese</option>
+                                <option value="history">History</option>
+                                <option value="linguistics">Linguistics</option>
+                                <option value="programming">Programming</option>
+                                <option value="management">Management</option>
+                                <option value="children">Children's Books</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="title">Book Name</label></td>
+                        <td><input type="text" name="title" id="title" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="author">Author</label></td>
+                        <td><input type="text" name="author" id="author" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="publisher">Publisher</label></td>
+                        <td><input type="text" name="publisher" id="publisher" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="published">Publishing Year</label></td>
+                        <td><input type="text" name="published" id="published" pattern="\d{4}" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="isbn">ISBN</label></td>
+                        <td><input type="text" name="isbn" id="isbn" pattern="\d{13}" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="acquired">Date Acquired</label></td>
+                        <td><input type="month" name="acquired" id="acquired" required /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="held">Copies Held</label></td>
+                        <td><input type="number" name="held" id="held" min="1" value="1" required /></td>
+                    </tr>
+                    <tr>
+                        <td>Synopsis</td>
+                        <td><textarea name="synopsis" id="synopsis" cols="50" required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="media">Attached Media</label></td>
+                        <td>
+                            <select name="media" id="media">
+                                <option value="">--None--</option>
+                                <option value="cd">CD</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Images</td>
+                        <td>
+                            <small style="color:lightcoral"><i>If only have one side for cover/dust jacket, unpick dual
+                                    side checkbox and select them as part of preview images!</i></small>
+                            <hr />
+                            <input type="checkbox" id="hasDualSideCover" class="fileInputActivator" />
+                            <label for="hasDualSideCover">Dual Side Cover</label><br />
+                            <input type="file" data-linkedinput="hasDualSideCover" name="coverImgs" multiple disabled />
+                            <hr />
+                            <input type="checkbox" id="hasDualSideDustJacket" class="fileInputActivator" />
+                            <label for="hasDualSideDustJacket">Dual Side Dust Jacket</label><br />
+                            <input type="file" data-linkedinput="hasDualSideDustJacket" name="dustjacketImgs" multiple
+                                disabled />
+                            <hr />
+                            <input type="checkbox" id="hasPreviewImg" class="fileInputActivator" />
+                            <label for="hasPreviewImg">Preview Images</label><br />
+                            <input type="file" data-linkedinput="hasPreviewImg" name="previewImgs" multiple disabled />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br />
+        <input type="submit" value="Add" id="add-entry">
+    </form>
+    <textarea id="output" readonly rows="10"></textarea>
+    <script>
+        // change url here !
+        const pathToImg = "/imgs/books/scans/"; //${genre}/${isbn}/filename.jpg;
+        const fileInput = document.querySelector("#existing-file");
+        const getJSON = document.querySelector("#get-file");
+        const download = document.querySelector("#download-link");
+
+        const bookDataForm = document.querySelector("form[name='book-data']");
+        const monthInput = document.querySelector("input[type='month']");
+        const textarea = document.querySelector("textarea#output");
+
+        const coverImgsInput = document.querySelector("input[type='file'][name='coverImgs']");
+        const dustjacketImgsInput = document.querySelector("input[type='file'][name='dustjacketImgs']");
+        coverImgsInput.addEventListener("change", fileLimitter);
+        dustjacketImgsInput.addEventListener("change", fileLimitter);
+
+        function fileLimitter(event) {
+            const fileSelected = event.target.files.length;
+            if (fileSelected !== 2) {
+                alert("Please select 2 files!");
+                const activationBox = document.querySelector(`#${event.currentTarget.dataset.linkedinput}`);
+                if (activationBox.checked) activationBox.click();
+                event.currentTarget.value = '';
+            }
+        }
+
+        const imageSelector = Array.from(document.getElementsByClassName("fileInputActivator"));
+        imageSelector.forEach((checkBox) => {
+            checkBox.addEventListener("change", (event) => {
+                const id = event.currentTarget.id;
+                const associatedInput = document.querySelector(`[data-linkedinput='${id}']`);
+                associatedInput.toggleAttribute("disabled");
+            })
+        })
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const today = new Date();
+            const currentYear = today.getFullYear();
+            const currentMonth = today.getMonth() + 1;
+            const yearMonthStr = `${currentYear}-${currentMonth.toString().padStart(2, "0")}`;
+            monthInput.setAttribute("max", yearMonthStr);
+        })
+
+        fileInput.addEventListener("click", () => {
+            window.alert("! Opening an existing file will overwrite any data you have entered!")
+        });
+        download.addEventListener("click", (event) => {
+            event.target.remove()
+        });
+
+        fileInput.addEventListener("change", displayData);
+        getJSON.addEventListener("click", generateJSON);
+        bookDataForm.addEventListener("submit", addBookData);
+
+        function displayData() {
+            const fileReader = new FileReader();
+            const [jsonFile] = fileInput.files;
+            const jsonFileData = fileReader.readAsText(jsonFile);
+
+            fileReader.addEventListener("loadstart", () => {
+                output.innerText = "";
+            })
+
+            fileReader.addEventListener("load", () => {
+                const jsonText = fileReader.result;
+                const bookListObj = JSON.parse(fileReader.result);
+                textarea.value = jsonText;
+                sessionStorage.setItem("fileContent", jsonText);
+                window.bookListObj = bookListObj;
+            })
+        }
+
+        function generateJSON() {
+            const texts = [textarea.value];
+            const file = new File(texts, "books_data.json", { type: "application/json" });
+            const url = URL.createObjectURL(file);
+            const anchor = document.createElement("a");
+            anchor.setAttribute("download", "books_data")
+            anchor.textContent = "Download JSON File.";
+            anchor.setAttribute("href", url);
+            while (download.lastElementChild) {
+                download.lastElementChild.remove();
+            }
+            download.append(anchor);
+        }
+
+        function addBookData(event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            const genre = formData.get("genre");
+            const isbn = formData.get("isbn");
+
+            const fileInputs = event.target.querySelectorAll("input[type='file']:not(:disabled)");
+            const fileInputLink = Array.from(fileInputs).map((input) => input.name);
+            
+            fileInputs.forEach((input) => {
+                const imageList = [];
+                for (const file of input.files) {
+                    const imgFilePath = pathToImg.concat(`${genre}/${isbn}/${file.name}`);
+                    imageList.push(imgFilePath);
+                }
+                formData.set(input.name, JSON.stringify(imageList));
+                input.toggleAttribute("disabled", true);
+            })
+
+            const bookData = [...formData.entries()];
+            const bookDataObj = bookData.reduce((entry, [dataItem, dataValue]) => {
+                entry[dataItem] = dataValue;
+                return { ...entry };
+            }, {});
+
+            //super disgusting stuff
+            fileInputLink.forEach((key) => {
+                let imagesArrString = bookDataObj[key];
+                if (imagesArrString) {
+                    bookDataObj[key] = JSON.parse(imagesArrString);
+                }
+            });
+
+            console.log(bookDataObj)
+
+            event.target.reset();
+            window.bookListObj ??= {};
+            let storedObject = window.bookListObj;
+            if (!storedObject[genre]) storedObject[genre] = [];
+            storedObject[genre]?.push(bookDataObj);
+            textarea.value = JSON.stringify(storedObject, null, 1);
+        }
+    </script>
+</body>
+
+</html>

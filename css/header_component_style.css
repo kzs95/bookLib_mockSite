@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+:host(booklib-header) {
+    grid-area: 1 / 1 / 2 / -1;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+}
+
+header {
+    height: max(10dvh, 50px);
+    background-image: linear-gradient(to right, #e6e8fa, white);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding-inline: .5rem;
+}
+
+a {
+    color: #2E5090;
+    text-decoration: none;
+}
+
+#logoBanner {
+    display: inline-block;
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+#openMenuBtnWrapper {
+    height: min(40px, 100%);
+    margin-left: auto;
+}
+
+#openMenuBtn {
+    height: 100%;
+    aspect-ratio: 1;
+    border: none;
+    background: transparent no-repeat top left/contain url(../imgs/icons/menu_40.svg);
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+#openMenuBtnWrapper.menuOpened>#openMenuBtn {
+    transform: rotate(-90deg);
+}
+
+#headerMenu {
+    width: 50%;
+    height: 90dvh;
+    position: absolute;
+    right: 0%;
+    top: 100%;
+    padding: 0.5rem;
+    background-color: #e6e8fa88;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation-name: slideIntoView;
+    animation-duration: .5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    pointer-events: none;
+}
+
+#headerMenu a {
+    pointer-events: all;
+}
+
+#headerMenu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    pointer-events: all;
+}
+
+@keyframes slideIntoView {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@media (hover:hover) {
+    a:hover {
+        filter: drop-shadow(0 0 5px #00CC99);
+    }
+}
+
+@media screen and (max-width:679px) {
+    #openMenuBtnWrapper {
+        display: inline-block;
+    }
+
+    header> :not(#logoBanner, #openMenuBtnWrapper, #headerMenu) {
+        display: none;
+    }
+}
+
+@media screen and (min-width:680px) {
+
+    #openMenuBtnWrapper,
+    #headerMenu {
+        display: none;
+    }
+}

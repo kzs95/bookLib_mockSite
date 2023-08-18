@@ -1,0 +1,99 @@
+div[slot="snap-pages"]>* {
+    position: absolute;
+    line-height: 1.25;
+    --line-height: 1.25;
+}
+
+div[slot="snap-pages"]>:is(p, span, div) {
+    font-size: clamp(0.9375rem, 0.625rem + 1vw, 1.25rem);
+    --font-size: clamp(0.9375rem, 0.625rem + 1vw, 1.25rem);
+    overflow: auto;
+    overscroll-behavior: contain;
+    background-color: #F5FFFA70;
+    padding-inline: .6rem .5rem;
+    padding-block: .5rem 0;
+    width: min(600px, 90%);
+    height: calc(var(--line-height)*var(--font-size)*4);
+    margin-block: .5rem;
+}
+
+div[slot="snap-pages"]>:is(p, div).story::first-letter {
+    font-size: 1.25em;
+    color: #2E5090;
+}
+
+div[slot="snap-pages"]>.year {
+    color: #3CB371;
+    text-shadow: 5px 2px 10px #000000;
+    text-decoration: underline #2E5090;
+    font-size: clamp(2rem, -1.625rem + 11.6vw, 5.625rem);
+    border:0;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+div[slot="snap-pages"] :is(.story, .year).top {
+    top: 0%
+}
+
+div[slot="snap-pages"] :is(.story, .year).bottom {
+    bottom: 0%
+}
+
+div[slot="snap-pages"] :is(.story, .year).left {
+    left: 0%;
+}
+
+div[slot="snap-pages"] :is(.story, .year).right {
+    right: 0%;
+}
+
+[id|='about']::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: opacity(.8);
+
+}
+
+#about-location iframe {
+    width: min(90%, 600px);
+    aspect-ratio: 4/3;
+}
+
+#about-1995::before {
+    filter: opacity(.8) sepia(.5);
+    background-image: url(../imgs/about/location-old-exterior-landscape.jpg);
+}
+
+#about-1998::before {
+    background-image: url(../imgs/about/bookshelf-corner.jpg);
+}
+
+#about-2000::before {
+    background-image: url(../imgs/about/interior.jpg);
+}
+
+#about-2002::before {
+    background-image: image-set(url("../imgs/about/interior2.webp") type("image/webp"), url("../imgs/about/interior2.jpg") type("image/jpeg"));
+}
+
+#about-2008::before {
+    background-image: url(../imgs/about/bookshelf-1.jpg);
+}
+
+#about-2012::before {
+    filter: opacity(0.6) saturate(1.5);
+    background-image: url(../imgs/about/bookshelf-2.jpg);
+}
+
+#about-2018::before {
+    background-image: url(../imgs/about/bookshelf-3.jpg);
+}
+#about-2021::before {
+    background-image: image-set(url("../imgs/about/exterior1.webp") type("image/webp"), url("../imgs/about/exteriro1.jpg") type("image/jpeg"));
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="book,preview">
+    <meta name="description" content="Provide information for various books.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="color-scheme" content="only light" />
+    <title>Register | Book Library</title>
+    <link rel="icon" type="image/png" href="/imgs/favicon/book_icon.svg">
+    <link rel="stylesheet" href="/css/books.css">
+    <script src="/js/book_component.js" type="module" defer></script>
+    <script src="/js/image_component.js" type="module" defer></script>
+    <script src="/js/account.js" type="module" defer></script>
+</head>
+
+<body>
+    <booklib-header></booklib-header>
+    <main class="contentWrapper">
+        <section class="account-related">
+            <h1>Member Registration</h1>
+            <form name="registration-form">
+                <label for="register-username">Username</label>
+                <input type="text" name="username" id="register-username" pattern="^[\w!@#$%&*'\-]+$" minlength="8"
+                    maxlength="20" required>
+                <label for="register-nameF">First Name</label>
+                <input type="text" name="firstName" id="register-nameF" placeholder="Capitalise 1st letter." pattern="\b[A-Z][a-zA-Z]+$" required>
+                <label for="register-nameL">Last Name</label>
+                <input type="text" name="lastName" id="register-nameL" placeholder="Capitalise 1st letter." pattern="\b[A-Z][a-zA-Z]+$" required>
+                <label for="register-email">Email</label>
+                <input type="email" name="email" id="register-email" required>
+                <label for="register-phone">Phone Number</label>
+                <input type="tel" name="phone" id="register-phone" placeholder="+6***********" pattern="(\+6)\d{10,11}$" required>
+                <label for="register-address">Address</label>
+                <input type="text" name="adddress" id="register-address" pattern="^[^<>]+$" required>
+                <label for="register-password">Password</label>
+                <input type="password" name="password" id="register-password"
+                    pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%])[^\s][a-zA-Z!@#$%\d]*$" minlength="8" maxlength="12"
+                    required>
+                <div class="passwordShow">
+                    <label for="show-password">Show Password</label>
+                    <input type="checkbox" id="show-password" class="show-password">
+                </div>
+                <input type="submit" value="Register">
+                <div class="login-guide">
+                    <p><b style="color:#CD5C5C">NOTE</b> : The Login/Register uses a dummy API called <a
+                            href="https://dummyjson.com/" target="_blank">DummyJSON</a>. Register <b>will not add
+                            it into the server</b>. Hence, credentials entered are <b>not usable at Login page.</b></p>
+                    <ul>
+                        <li>
+                            <b>Username</b>: 8 - 20 characters. Alphanumeric characters and 9 Symbols (!@#$%&*'-).
+                        </li>
+                        <li>
+                            <b>Password</b>: 8 - 12 characters. Alphanumeric characters and 5 Symbols (!@#$%).
+                            <b>At least one character PER TYPE.</b>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </section>
+    </main>
+    <booklib-footer></booklib-footer>
+</body>
+
+</html>

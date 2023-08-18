@@ -1,0 +1,93 @@
+/* Tile Container */
+.tile-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+}
+/* .tile-container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+} */
+.tile-container> ::slotted(*) {
+    flex: 0 1 200px;
+}
+
+/* General Tile */
+:is(.tile-potrait,.tile-landscape)>picture.reverse{
+    order:2;
+}
+
+/* Tile Potrait */
+.tile-potrait {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: 0.5rem;
+    background-color: #FFFAF0;
+    line-height: 1.25;
+}
+.tile-potrait>.tile-potrait-picture>::slotted(img){
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-fit: scale-down;
+    object-position: top left;
+}
+.tile-potrait>.tile-potrait-picture.unlockimgaspectratio>::slotted(img){
+    aspect-ratio: auto;
+}/*Fringe case*/
+
+.tile-potrait>.tile-potrait-descp{
+    align-self: flex-start;
+}
+.tile-potrait>.tile-potrait-descp>::slotted(:where(p,small,div,a)){
+    margin: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+/* If use :is(), can increase the following specificity by adding :host() / :host */
+::slotted([slot='tile-potrait-descp-text'].large){
+    font-size: 1.2rem;
+}
+::slotted([slot='tile-potrait-descp-text'].larger){
+    font-size: 1.5rem;
+}
+::slotted([slot='tile-potrait-descp-text'].bold){
+    font-weight: bold;
+}
+::slotted([slot='tile-potrait-descp-text'].uppercase){
+    text-transform: uppercase;
+}
+::slotted([slot='tile-potrait-descp-text'].unclamp){
+    display: block;
+    line-height: 1.5;
+}
+
+/* Tile Landscape */
+.tile-landscape{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap:.5rem;
+}
+.tile-landscape>.tile-landscape-picture{
+    flex: 0 1 37%;
+    text-align: center;
+}
+.tile-landscape>.tile-landscape-descp{
+    padding:.5rem;
+    flex: 0 1 60%;
+}
+.tile-landscape.wrap{
+    flex-flow:row wrap;
+}
+.tile-landscape.wrap>:is(.tile-landscape-picture,.tile-landscape-descp){
+    flex-grow: 1;
+}

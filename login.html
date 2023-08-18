@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="book,preview">
+    <meta name="description" content="Provide information for various books.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="color-scheme" content="only light" />
+    <title>Login | Book Library</title>
+    <link rel="icon" type="image/png" href="/imgs/favicon/book_icon.svg">
+    <link rel="stylesheet" href="/css/books.css">
+    <script src="/js/book_component.js" type="module" defer></script>
+    <script src="/js/image_component.js" type="module" defer></script>
+    <script src="/js/account.js" type="module" defer></script>
+</head>
+
+<body>
+    <booklib-header></booklib-header>
+    <main class="contentWrapper">
+        <section class="account-related">
+            <h1>Login</h1>
+            <form name="login-form">
+                <label for="login-username">Username</label>
+                <input type="text" name="username" id="login-username" required>
+                <label for="login-password">Password</label>
+                <input type="password" name="password" id="login-password" required>
+                <div class="passwordShow">
+                    <label for="show-password">Show Password</label>
+                    <input type="checkbox" id="show-password" class="show-password">
+                </div>
+                <input type="submit" value="Login">
+                <div class="login-guide">
+                    <p><b style="color:#CD5C5C">NOTE</b>: The Login/Registeruses a dummy API called
+                        <a href="https://dummyjson.com/" target="_blank">DummyJSON</a>. Login only works with
+                        <b>specific credentials</b>. You may get the credentials list from their
+                        website. Or click the button below to fetch random valid credentials.
+                    </p>
+                    <button type="button">GET Details</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <booklib-footer></booklib-footer>
+</body>
+
+</html>

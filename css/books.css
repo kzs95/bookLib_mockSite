@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+/* Blanket Rules */
+html {
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* :lang(zh) {
+    font-family: 'SimSun';
+} */
+
+a[target="_blank"]::after {
+    content: "";
+    display: inline-block;
+    background-image: url(../imgs/icons/externalLink_20.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 0.7em;
+    aspect-ratio: 1;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+}
+
+body {
+    margin: 0px;
+    padding: .5rem;
+    display: grid;
+    grid-template-rows: minmax(10dvh, 50px) auto auto;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+h1 {
+    color: #2E5090;
+    border-block-end: 2px solid #367588;
+    margin-block: 0 1rem;
+}
+
+h3 {
+    color: #004792;
+    font-size: 1.1rem;
+    margin-block: 0 0.5rem;
+}
+
+p {
+    margin-block: 0 5px;
+}
+
+/* Media Rules*/
+/* Hide genre text when too narrow*/
+@media screen and (max-width:679px) {
+    .genreName {
+        display: none;
+    }
+}
+
+/* Hover Styles */
+@media (hover: hover) {
+    .genre:hover {
+        color: #004792;
+        background: #e6e6fa85;
+    }
+
+    a.page-preview-link:hover {
+        text-decoration: underline;
+    }
+
+    /* nav > span:hover {
+        animation-name:genreHover;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction:alternate;
+        cursor:pointer;
+    }
+
+    @keyframes genreHover{
+        0%{background-position: 0% 0%}
+        25%{background-position: 25% 0%}
+        50%{background-position: 50% 0%}
+        75%{background-position: 75% 0%}
+        100%{background-position:100% 0%}
+    } */
+}
+
+@keyframes banner-appear {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Shadow dom wonky stuff */
+[slot] img,
+img[slot] {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* index.html shadow dom stuff */
+[slot^='banner-item'] img {
+    aspect-ratio: 2;
+}
+
+/* Header Stuff - See related component JS file*/
+/* Footer Stuff - See related component JS file*/
+
+/* Various wrapper for Main Area (e.g. Sections, Navigation)*/
+.collectionWrapper {
+    /*For collection.html*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "genre books books books books books";
+    gap: 1rem;
+}
+
+.contentWrapper>section {
+    width: min(1000px, 100%);
+    margin: 1rem auto;
+}
+
+/* .contentWrapper>section>h1 {
+    color: #2E5090;
+    border-block-end: 2px solid #367588;
+    margin-block: 0 1rem;
+} */
+
+.collectionWrapper>section a {
+    color: #004792;
+    text-decoration: none;
+}
+
+/* index.html */
+a.page-preview-link::after {
+    content: "";
+    display: inline-block;
+    background: url(../imgs/icons/arrow_right_40.svg) bottom left/contain no-repeat;
+    vertical-align: text-bottom;
+    margin-inline-start: .5rem;
+    height: .9em;
+    width: auto;
+    aspect-ratio: 1;
+}
+
+/* about.html - See about.css*/
+
+/* collection.html */
+/* Navigation Part */
+nav {
+    grid-area: genre;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 0.5rem;
+    background-color: #ebeee940;
+    position: sticky;
+    top: calc(max(10dvh, 50px) + 1.5rem);
+    height: max-content;
+    width: max-content;
+    z-index: 1;
+}
+
+nav>button.genre {
+    display: block;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #E6E6FA00;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav>a.genre {
+    display: block;
+    text-decoration: none;
+    color: black
+}
+
+nav>.genre>.genreGraphics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav>.genre>.genreGraphics> :is(svg, img) {
+    max-width: 30px;
+    aspect-ratio: 1;
+}
+
+nav>.genre>.genreGraphics>.genreName {
+    margin: 0;
+}
+
+#bookListings {
+    grid-area: books;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 1rem;
+    overflow-y: auto;
+    background-color: #ebeee940;
+    padding: 1rem 0.5rem;
+}
+
+h3[slot='book-title']>a.book-page-link {
+    text-decoration: underline;
+}
+
+/* Login & Register */
+:is(form[name="login-form"], form[name="registration-form"]) {
+    border: 2px solid #367588;
+    border-radius: 5px;
+    padding: 1rem;
+    width: min(350px, 100%);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: .3rem;
+    margin-inline: auto;
+    background-color: #F5FFFA;
+}
+
+:is(form[name="login-form"], form[name="registration-form"]) input:invalid {
+    background-color: #FFF0F5;
+}
+
+:is(form[name="login-form"], form[name="registration-form"]) .login-reg-error {
+    color: red;
+}
+
+:is(form[name="login-form"], form[name="registration-form"]) input[type='submit'] {
+    cursor: pointer;
+    font-family: inherit;
+    width: max(90px, 25%);
+}
+
+:is(form[name="login-form"], form[name="registration-form"]) input.show-password {
+    vertical-align: middle;
+}
+
+form>div.login-guide {
+    padding: .5rem;
+    background-color: #F0F8FF;
+    font-size: small;
+
+}
+
+div.login-guide>p {
+    font-style: italic;
+    text-align: justify;
+}
+
+div.login-guide>ul {
+    padding-inline-start: 1rem;
+    margin-block: .5rem;
+}
+
+div.login-guide>button {
+    background-color: #F0FFF0;
+    border: 2px solid #2E8B57;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* SVG Texts */
+text {
+    font-family: 'Cormorant', serif;
+}
+
+/* Special */
+.antiqueLook {
+    filter: sepia(.5)
+}
+
+/*For Testing Use*/
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+/* #scrollpercentagebar {
+    height: 0;
+    border-bottom: 2px solid;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+} */
+table.overview-table {
+    text-align: left;
+}
+
+table.overview-table .overview-criteria {
+    background-color: #F0F8FF;
+    width: 25%;
+}
+
+table.overview-table,
+table.overview-table :is(td, th) {
+    border: 2px solid #4682B4;
+    border-collapse: collapse;
+    padding: .5rem;
+}

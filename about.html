@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="book,preview">
+    <meta name="description" content="Provide information for various books.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="color-scheme" content="only light" />
+    <title>About | Book Library</title>
+    <link rel="icon" type="image/png" href="/imgs/favicon/book_icon.svg">
+    <link rel="stylesheet" href="/css/books.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <script src="/js/book_component.js" type="module" defer></script>
+    <script src="/js/image_component.js" type="module" defer></script>
+    <script src="/js/tile_component.js" type="module" defer></script>
+    <script src="/js/snapscrollbox_component.js" type="module" defer></script>
+</head>
+
+<body>
+    <booklib-header></booklib-header>
+    <main class="contentWrapper">
+        <section id="about-backstory">
+            <h1>About Us</h1>
+            <snap-scroll>
+                <div id="about-1995" slot="snap-pages">
+                    <h1 class="year top left">1995</h1>
+                    <p class="story right bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum
+                        dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div id="about-1998" slot="snap-pages">
+                    <h1 class="year top right">1998</h1>
+                    <p class="story left bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+                        debitis! Saepe beatae, minimacorrupti reiciendis inventore expedita!</p>
+                </div>
+                <div id="about-2000" slot="snap-pages">
+                    <h1 class="year top left">2000</h1>
+                    <p class="story bottom left">If you're visiting this page, you're likely here because you're
+                        searching for a random sentence.</p>
+                </div>
+                <div id="about-2002" slot="snap-pages">
+                    <h1 class="year bottom right">2002</h1>
+                    <p class="story top left">For writers, a random sentence can help them get their creative juices
+                        flowing.</p>
+                </div>
+                <div id="about-2008" slot="snap-pages">
+                    <h1 class="year bottom left">2008</h1>
+                    <p class="story top right">Our goal is to make this tool as useful as possible. Please
+                        contact us so we can consider adding your ideas.</p>
+                </div>
+                <div id="about-2012" slot="snap-pages">
+                    <h1 class="year bottom left">2012</h1>
+                    <p class="story top left">Have several random sentences generated and you'll soon be able to see
+                        if they can help with your project.</p>
+                </div>
+                <div id="about-2018" slot="snap-pages">
+                    <h1 class="year top right">2018</h1>
+                    <p class="story bottom right">Trying to incorporate the sentence into your project can help you look
+                        at it in different and unexpected ways.</p>
+                </div>
+                <div id="about-2021" slot="snap-pages">
+                    <h1 class="year top right">2021</h1>
+                    <p class="story bottom left">Even though it took a lot of time, all the sentences in this generator
+                        were created by us.</p>
+                </div>
+            </snap-scroll>
+        </section>
+        <section id="about-contact">
+            <h1>Contact</h1>
+            <address>
+                You may contact us via the following channel should you have any enquiries.
+                <ul class="location-info">
+                    <li style="list-style-image:url(/imgs/icons/call_15.svg);"><a
+                            href="tel:+603-7459033126">03-7459033126</a></li>
+                    <li style="list-style-image:url(/imgs/icons/mail_15.svg);"><a
+                            href="mailto:non_existent@booklib.com">non_existent@booklib.com</a></li>
+                    <li style="list-style-image:url(/imgs/icons/map_15.svg);">No.180, Jalan Bunga, Taman Daun Biru,
+                        30000 Ipoh, Perak.</li>
+                </ul>
+            </address>
+        </section>
+        <section id="about-location">
+            <h1>Location</h1>
+            <iframe loading="lazy" allowfullscreen
+                src="https://www.openstreetmap.org/export/embed.html?bbox=100.5435946583748%2C4.198021194945642%2C100.54807394742967%2C4.200428702630145&amp;layer=mapnik"></iframe>
+            <br /><small><a target="_blank" href="https://www.openstreetmap.org/#map=19/4.19922/100.54583">View Larger
+                    Map</a></small>
+        </section>
+    </main>
+    <booklib-footer></booklib-footer>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="300"
+   viewBox="0 0 158.74998 79.37499"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <rect
+       x="-258.51646"
+       y="-225.96254"
+       width="1392.159"
+       height="886.61571"
+       id="rect3075" />
+    <rect
+       x="18.956907"
+       y="31.143489"
+       width="389.97065"
+       height="102.90892"
+       id="rect1715" />
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#d1ffd9;stroke-width:0.08999999;stroke-linecap:round;paint-order:stroke fill markers;fill-opacity:1;stroke-dasharray:none"
+       id="rect788"
+       width="158.74998"
+       height="79.374992"
+       x="-8.8817842e-16"
+       y="0" />
+    <text
+       xml:space="preserve"
+       transform="matrix(2.0096485,0,0,2.0487209,-33.999987,-60.525296)"
+       id="text1713"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.3435px;font-family:Georgia;-inkscape-font-specification:'Georgia, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1715);display:inline;fill:#f7f6a4;fill-opacity:1;stroke:#000000;stroke-width:0.340118;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"><tspan
+         x="18.957031"
+         y="44.083575"
+         id="tspan1323">Featured</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.2645833)"
+       id="text3073"
+       style="fill:#f0d1ff;font-size:120px;-inkscape-font-specification:'Georgia, Normal';font-family:Georgia;stroke-width:2.445;paint-order:stroke fill markers;stroke-linecap:round;stroke-dasharray:none;fill-opacity:1;stroke:#1b17ba;stroke-opacity:1;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect3075)" />
+  </g>
+</svg>

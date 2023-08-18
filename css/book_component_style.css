@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+/* book-list element */
+.bookList {
+    margin: 10px 0;
+    padding: .5rem;
+    background-image: radial-gradient(farthest-corner at top left, #d8bfd880, #d6cadd20);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.bookList>.bookCoverImg {
+    flex: 0 1 200px;
+}
+
+.bookList>.bookInfo {
+    flex: 1 1 500px;
+    margin-right: auto;
+    overflow-y: auto;
+}
+
+.bookList>.bookCoverImg img,
+.bookList>.bookCoverImg>::slotted(img) {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/5;
+    object-position: center;
+    object-fit: cover;
+}
+
+.bookList>.bookInfo h3,
+.bookList>.bookInfo>::slotted(h3) {
+    color: #004792 !important;
+    font-size: 1.1rem !important;
+    margin-block: 0.5rem 1rem !important;
+}
+
+/* book-data element */
+ul.book-details {
+    padding-inline: 0;
+    margin-block: .5rem;
+    width: max-content;
+    max-width: 100%;
+}
+
+ul.book-details>li {
+    list-style-type: none;
+}
+
+ul.book-details>li::before {
+    content: " ";
+    display: inline-block;
+    height: 1rem;
+    width: auto;
+    aspect-ratio: 1;
+    margin-right: 1rem;
+}
+
+ul.book-details>li.book-author::before {
+    background: top right / cover no-repeat url(../imgs/icons/pen_40.svg);
+}
+
+ul.book-details>li.book-publisher::before {
+    background: top right / cover no-repeat url(../imgs/icons/publisher_40.svg);
+}
+
+ul.book-details>li.book-isbn::before {
+    background: top right / cover no-repeat url(../imgs/icons/isbn_40.svg);
+}
+
+ul.book-details>li.book-published::before {
+    background: top right / cover no-repeat url(../imgs/icons/calendar_40.svg);
+}
+
+ul.book-details>li.book-acquired::before {
+    background: top right / cover no-repeat url(../imgs/icons/inventory_40.svg);
+}
+
+ul.book-details>li.book-held::before {
+    background: top right / cover no-repeat url(../imgs/icons/inventory_40.svg);
+}
+
+/* book-info element */
+
+section[class|='bookinfo'] {
+    margin-block: 1rem;
+}
+
+section[class|='bookinfo'] h1 {
+    color: #2E5090;
+    border-block-end: 2px solid #367588;
+    margin-block: 0 1rem;
+}
+
+/* user-info component */
+.user-info-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 1rem;
+}
+
+.user-info-wrapper>.user-img {
+    flex: 0 0 200px;
+    text-align: center;
+}
+
+.user-info-wrapper>.user-data {
+    flex: 1 1 500px;
+}
+
+.user-info-wrapper>.user-data>.user-data-entry{
+    box-shadow: 0 0 0.5rem 5px #F0F8FF;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-block: 1.1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    gap:.5rem;
+}
+
+.user-info-wrapper>.user-data>.user-data-entry>span:first-child{
+    flex: 0 0 90px;
+    color:#008B8B;
+    word-break: break-all;
+}
+
+.user-info-wrapper>.user-data>.user-data-entry>::slotted(span){
+    word-break: break-all;
+}
+
+.user-info-wrapper>.user-img img,
+.user-info-wrapper>.user-img ::slotted(img) {
+    max-height: 200px;
+    object-fit: contain;
+    object-position: center;
+    clip-path: circle(40%);
+    background-color: #F0FFFF;
+}

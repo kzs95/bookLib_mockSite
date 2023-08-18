@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="svg8450"
+   width="110"
+   height="110"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8454" />
+  <path
+     id="page"
+     d="m 5,20.186016 v 80.000004 q 25,-10.000004 50,0 25,-10.000004 50,0 V 20.186016 q -25,-10 -50,0 V 100.18602 20.186016 q -25,-10 -50,0 z"
+     stroke="#002d62"
+     stroke-width="2"
+     fill="#b9d9eb" />
+  <path
+     id="flip1"
+     d="m 55,20.186016 q 22.5,-10 45,-5 v 80 q -22.5,-5 -45,4.000004 z"
+     stroke="#002d62"
+     stroke-width="2"
+     fill="#5d8aa8" />
+  <path
+     id="flip2"
+     d="m 55,20.186016 q 20,-10 40,-10 v 80 q -20,-2.5 -40,9.000004 z"
+     stroke="#002d62"
+     stroke-width="2"
+     fill="#76abdf" />
+  <path
+     id="flip3"
+     d="m 55,20.186016 q 17.5,-10 35,-12.9999999 V 87.186016 q -17.5,-2 -35,11.500004 z"
+     stroke="#002d62"
+     stroke-width="2"
+     fill="#e0ffff" />
+  <path
+     id="ribbon"
+     d="m 15,70.186016 7.5,-10 7.5,10 v -56 c 1,-1 -16,-1 -15,2 z"
+     stroke="#00693e"
+     stroke-width="2"
+     fill="#50c878" />
+</svg>

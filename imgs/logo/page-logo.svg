@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 220 100" width="220px" height="100px" preserveAspectRatio="xMinYMin meet">
+                    <path id="page" d="m0 15 v80 q25 -10, 50 0  q25 -10, 50 0 v-80 q-25 -10, -50 0 v80 v-80 q-25 -10, -50 0 z" stroke="#002D62" stroke-width="2" fill="#B9D9EB"></path>
+                    <path id="flip1" d="m50 15 q22.5 -10, 45 -5 v80 q-22.5 -5, -45 4 z" stroke="#002D62" stroke-width="2" fill="#5D8AA8"></path>
+                    <path id="flip2" d="m50 15 q20 -10, 40 -10 v80 q-20 -2.5, -40 9 z" stroke="#002D62" stroke-width="2" fill="#76ABDF"></path>
+                    <path id="flip3" d="m50 15 q17.5 -10, 35 -13 v80 q-17.5 -2, -35 11.5 z" stroke="#002D62" stroke-width="2" fill="#E0FFFF"></path>
+                    <path id="ribbon" d="m10 65 l7.5 -10 l7.5 10 v-56 c1 -1,-16 -1, -15 2 z" stroke="#00693E" stroke-width="2" fill="#50C878"></path>
+<text x="110" y="45" font-size="30px" fill="#367588">Book</text>
+                    <text x="110" y="75" font-size="30px" fill="#2E5090">Library</text>
+        </svg>
