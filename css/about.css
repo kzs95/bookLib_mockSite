@@ -79,7 +79,8 @@ div[slot="snap-pages"] :is(.story, .year).right {
 }
 
 #about-2002::before {
-    background-image: image-set(url("../imgs/about/interior2.webp") type("image/webp"), url("../imgs/about/interior2.jpg") type("image/jpeg"));
+    background-image: image-set(url("../imgs/about/interior2.webp") type("image/webp"), url("../imgs/about/interior2.jpg") type("image/jpeg")); /*won't work in safari mobile*/
+    background-image: url("../imgs/about/interior2.jpg");
 }
 
 #about-2008::before {
@@ -95,5 +96,5 @@ div[slot="snap-pages"] :is(.story, .year).right {
     background-image: url(../imgs/about/bookshelf-3.jpg);
 }
 #about-2021::before {
-    background-image: image-set(url("../imgs/about/exterior1.webp") type("image/webp"), url("../imgs/about/exteriro1.jpg") type("image/jpeg"));
+    background-image: url("../imgs/about/exterior1.jpg");
 }

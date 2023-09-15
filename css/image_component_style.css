@@ -139,17 +139,19 @@
     background: #B9D9EB50 url(../imgs/icons/fullscreen_40.svg) top left/contain no-repeat;
 }
 
-dialog.two-side-img-dialog{
-    max-width:90dvw;
-    border:0;
+dialog.two-side-img-dialog {
+    max-width: 90dvw;
+    max-height: 100dvh;
+    border: 0;
+    padding: 0;
     background-color: transparent;
 }
 
-dialog.two-side-img-dialog::backdrop{
+dialog.two-side-img-dialog::backdrop {
     background-color: #FDF5E685;
 }
 
-dialog.two-side-img-dialog>button.two-side-img-dialog-close{
+dialog.two-side-img-dialog>button.two-side-img-dialog-close {
     position: fixed;
     width: 30px;
     aspect-ratio: 1;

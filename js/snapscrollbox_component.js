@@ -16,8 +16,8 @@ class SnapScrollBox extends HTMLElement {
             </slot>
         </div>
         <div class="changeSnapPage Y">
-            <button class="goBackward"></button>
-            <button class="goForward"></button>
+            <button class="goBackward" disabled></button>
+            <button class="goForward" disabled></button>
         </div>
         `;
         linkElm.setAttribute('rel', 'stylesheet');
@@ -55,7 +55,7 @@ class SnapScrollBox extends HTMLElement {
         const forwardBtn = this.shadowRoot.querySelector(".goForward");
 
         const backForth = function (event) {
-            const toShow = event.target.classList.contains("goForward") ? thisElm.inView.nextElementSibling : thisElm.inView.previousElementSibling;
+            const toShow = event.target.classList.contains("goForward") ? thisElm.#inView.nextElementSibling : thisElm.#inView.previousElementSibling;
             if (toShow) toShow.scrollIntoView({behavior:'smooth',block:'end'});
         }
         backwardBtn.addEventListener("click", backForth);
@@ -67,7 +67,7 @@ class SnapScrollBox extends HTMLElement {
             //If iterate through the array, sometimes on load will say all divs visible, esp. clear cache reload
             if (observed.isIntersecting) {
                 const intersected = observed.target;
-                thisElm.inView = intersected;
+                thisElm.#inView = intersected;
                 const placement = Array.from(snapDivs).indexOf(intersected);
                 if (placement === 0) backwardBtn.toggleAttribute("disabled", true);
                 else if (placement > 0) backwardBtn.toggleAttribute("disabled", false);
